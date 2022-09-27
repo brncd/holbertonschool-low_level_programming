@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $CFILE >> c
+export main.c=$CFILE | echo $CFILE >> c
