@@ -10,8 +10,11 @@ int main(void)
 
 	while (alphabet <= 'z')
 	{
-		printf("%c \n", alphabet);
+		printf("%c", alphabet);
 		alphabet++;
+	}
+	{
+		printf("\n");
 	}
 	return (0);
 }
