@@ -6,20 +6,15 @@
 */
 int main(void)
 {
-        char alphabet = 'a';
-	char Alphabet = 'A';
+	char alphabet = 'a';
 
-        while (alphabet <= 'z')
-        {
-                putchar("%c", alphabet);
-                alphabet++;
+	while (alphabet <= 'z')
+	{
+		printf("%c", alphabet);
+		alphabet++;
 	}
-	while (Alphabet <= 'Z'
-		putchar("%c", alphabet);
-		Alphabet++
-        }
-        {
-                putchar("\n");
-        }
-        return (0);
-}                                                           
+	{
+		printf("\n");
+	}
+	return (0);
+}
