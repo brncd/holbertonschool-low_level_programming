@@ -8,7 +8,7 @@ int main(void)
 {
 	char tebahpla = 'z';
 
-	while (alphabet >= 'a')
+	while (tebahpla >= 'a')
 	{
 		printf("%c", tebahpla);
 		tebahpla++;
