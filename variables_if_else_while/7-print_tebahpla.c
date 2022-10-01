@@ -6,15 +6,14 @@
 */
 int main(void)
 {
-	char tebahpla = 'z';
+	char tebahpla;
 
-	while (tebahpla >= 'a')
+	for (tebahpla = 'z'; tebahpla >= 'a' ; tebahpla++)
 	{
-		printf("%c", tebahpla);
-		tebahpla++;
+		putchar(tebahpla);
 	}
 	{
-		printf("\n");
+		putchar('\n');
 	}
 	return (0);
 }
