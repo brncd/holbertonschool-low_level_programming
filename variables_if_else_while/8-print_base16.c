@@ -8,7 +8,11 @@ int main(void)
 {
 	char nbase;
 
-	for (nbase = '0'; nbase <= 'f'; nbase++)
+	for (nbase = '0'; nbase <= '9'; nbase++)
+	{
+		putchar(nbase);
+	}
+	for (nbase = 'a'; nbase <= 'f'; nbase++)
 	{
 		putchar(nbase);
 	}
