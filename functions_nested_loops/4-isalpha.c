@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islower- Entry point
+* _isalpha- Entry point
 *
 * Return: 1, 0
 * @c: int
@@ -13,10 +13,10 @@ int _isalpha(int c)
 	}
 	else if (c > 96 && c < 123)
 	{
-		
+
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
