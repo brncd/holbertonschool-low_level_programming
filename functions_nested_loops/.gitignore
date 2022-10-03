@@ -54,3 +54,8 @@ dkms.conf
 # Vim
 *.swo
 *.swp
+
+# Other
+main.c
+main.h
+_putchar.c
