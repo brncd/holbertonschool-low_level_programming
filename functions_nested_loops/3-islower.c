@@ -2,6 +2,8 @@
 /**
 * _islower- Entry point
 *
+* Return: 1, 0
+* @c: int
 */
 int _islower(int c)
 {
@@ -9,7 +11,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
