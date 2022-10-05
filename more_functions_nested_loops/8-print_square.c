@@ -5,19 +5,19 @@
  */
 void print_square(int size)
 {
-    int count;
-	int num;
+	int line;
+	int column;
 
 	if (size > 0)
 	{
-		for (count = 0; count < size; count++)
+		for (line = 1; line <= size; line++)
 		{
-			for (num = 0; num < count; num++)
+			for (column = 1; column < size; column++)
 			{
 				_putchar(35);
-                _putchar('\n');
 			}
 			_putchar(35);
+			_putchar('\n');
 		}
 	}
 	else
