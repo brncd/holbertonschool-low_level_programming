@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * mul - function
- * @a: int
- * @b: int
- * Return: 0
+ * print_numbers - function
+ * @num: int
  */
 void print_numbers(void)
 {
@@ -13,5 +11,5 @@ void print_numbers(void)
 	{
 		_putchar(num);
 	}
-	_putchar('\b');
+	_putchar('\n');
 }
