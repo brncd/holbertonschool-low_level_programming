@@ -5,24 +5,25 @@
  */
 void print_triangle(int size)
 {
-	int count = 0;
-	int x = 1;
-    int y = 0;
-
-    
+	int count;
+	int x;
 
 	if (size > 0)
 	{
-		for (count = 1; count <= size ; count++)
+		for (count = 1; count <= size; count++)
 		{
-			y = count - x;
-            for (x = 1; x <= y ; x++)
+			for (x = size - 1; x > 0; x--)
 			{
-				_putchar('#');
+				if (count > x)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 			}
 			_putchar('\n');
-            _putchar(' ');
-
 		}
 	}
 	else
