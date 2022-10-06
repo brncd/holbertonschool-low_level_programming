@@ -2,8 +2,8 @@
 /**
 * swap_int - function
 * @c - int
-* *b - int
-* *c - int
+* @a - int
+* @b - int
 */
 void swap_int(int *a, int *b)
 {
