@@ -12,5 +12,5 @@ void _puts(char *str)
   {
     _putchar(str[count]);
   }
-  _putchar('10');
+  _putchar(10);
 }
