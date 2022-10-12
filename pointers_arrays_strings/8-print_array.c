@@ -4,12 +4,13 @@ void print_array(int *a, int n)
 {
 	int count;
 
-	if (n > 0)
+	for (count = 0; count < n; count++)
 	{
-		for (count = 0; a[count] != '\0'; count++)
-		{
-		printf ("%d", a[count]);
+		if (count < n - 1)
+		{	
+			printf("%d, ", a[count]);
 		}
 	}
+	printf("%d", a[count]); 
+	printf ("\n");
 }
-
