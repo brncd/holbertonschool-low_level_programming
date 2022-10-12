@@ -1,16 +1,17 @@
 #include "main.h"
+/**
+ * _strcpy - function
+ * @dest: char
+ * @src: char
+ * Reutn: the pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	int x;
 
-	for (i = 0; src[i] <= '\0'; i++)
-	{
-		i++;
-	}
-	for (x = 0; x < i && src[x] != '\0'; x++)
+	for (i = 0; src[i] == '\0'; ++i)
 	{
 		dest[i] = src[i];
 	}
-	return(dest);
+	return (src);
 }
