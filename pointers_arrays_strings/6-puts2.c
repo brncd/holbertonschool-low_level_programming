@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - function
- * @str: cnar
+ * @str: char
  */
 void puts2(char *str)
 {
@@ -11,8 +11,8 @@ void puts2(char *str)
 	{
 		if (count % 2 == 0)
 		{
-			_putchar (str[count]);
+			_putchar(str[count]);
 		}
 	}
-	_putchar(count);
+	_putchar('\n');
 }
