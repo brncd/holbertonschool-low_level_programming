@@ -3,8 +3,9 @@
  * _strcpy - function
  * @dest: char
  * @src: char
- * Reutn: the pointer to dest
+ * Return: the pointer to dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i;
