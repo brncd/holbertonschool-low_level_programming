@@ -1,13 +1,11 @@
 #include "main.h"
-
 /**
- * _memset - function 
- * @s: char 
+ * _memset - function
+ * @s: char
  * @b: char
  * @n: int
  * Return: n
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
