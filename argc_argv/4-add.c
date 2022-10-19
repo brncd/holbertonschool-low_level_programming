@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  *
  */
@@ -16,7 +15,7 @@ int main(int argc, char *argv[])
 	{
 		if (*argv[i] >= 'A' && *argv[i] <= 'z' )
 		{
-			printf("%s\n", "Error");
+			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[i]);
