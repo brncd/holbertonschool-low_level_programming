@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  *
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, sum = 0;
 
 	if (argc < 1)
 	{
@@ -13,12 +14,18 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= 'A' && *argv[i] <= 'z' )
-		{
-			printf("Error\n");
-			return (1);
+		for (j = 0; argv[i][j]; j++)
+		{	
+			if ( (isdigit(argv[i][j]) == 0)  )
+			{
+				printf("Error\n");
+				return (1);
 		}
-		sum += atoi(argv[i]);
+		else 
+		{
+			sum += atoi(argv[i]);
+		}
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
