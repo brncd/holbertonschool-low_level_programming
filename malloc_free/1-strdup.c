@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include<string.h>
 /**
  *
  */
@@ -11,7 +12,7 @@ char *_strdup(char *str)
 
 	if (str != NULL)
 	{
-		a = (char *)malloc(sizeof(char) * *str);
+		a = (char *)malloc(sizeof(char) * strlen(str));
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			a[i] = str[i];
