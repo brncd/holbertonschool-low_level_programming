@@ -13,18 +13,19 @@ char *str_concat(char *s1, char *s2)
 	char *a = NULL;
 	unsigned int i, x;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		if (s1 == NULL)
-		{
-			s1 = "";
-		}
-		else
-		{
-			s2 = "";
-		}
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	a = (char *)malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
+	if (a == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i <= strlen(s1) + 1; i++)
 	{
 		a[i] = s1[i];
