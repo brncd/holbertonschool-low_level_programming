@@ -3,7 +3,9 @@
 #include "main.h"
 #include<string.h>
 /**
- *
+ * _strdup - return a pointer which a copy of the string given as a parameter
+ * @str: pointer
+ * Return: a
  */
 char *_strdup(char *str)
 {
@@ -12,7 +14,7 @@ char *_strdup(char *str)
 
 	if (str != NULL)
 	{
-		a = (char *)malloc(sizeof(char) * strlen(str));
+		a = (char *)malloc(sizeof(char) * strlen(str) + 1);
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			a[i] = str[i];
