@@ -15,6 +15,10 @@ char *_strdup(char *str)
 	if (str != NULL)
 	{
 		a = (char *)malloc(sizeof(char) * strlen(str) + 1);
+		if (a == NULL)
+		{
+			return (NULL);
+		}
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			a[i] = str[i];
