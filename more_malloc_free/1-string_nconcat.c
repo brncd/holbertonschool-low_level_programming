@@ -23,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= strlen(s1); i++)
+	for (i = 0; i < strlen(s1); i++)
 	{
 		p[i] = s1[i];
 	}
-	for (x = 0; x <= n + 1; x++)
+	for (x = 0; x < n; x++)
 	{
 		p[strlen(s1) + x] = s2[x];
 	}
