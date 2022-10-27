@@ -1,27 +1,28 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
+ * _calloc - allocates memory for an array
+ * @nmemb: unsigned int
+ * @size: unsigned int
+ * Return: pointer
  */
-int *array_range(int min, int max)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *p = NULL;
-	int i, x;
+	unsigned int i;
 
-	if (min > max)
+	if (nmemb == 0 || size == 0)
 	{
-		return (NULL);
+		return (0);
 	}
-	p = (int *)malloc(sizeof(int) * (max - min + 1));
+	p = malloc(sizeof(size) * nmemb);
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	x = (max - min + 1);
-	for (i = 0; i < x; i++)
+	for (i = 0; i < nmemb; i++)
 	{
-		p[i] = min + 1;
+		p[i] = 0;
 	}
 	return (p);
 }
