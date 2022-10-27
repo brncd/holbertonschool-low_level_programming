@@ -10,14 +10,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p = NULL;
 	unsigned int i, x;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	p = (char *)malloc(strlen(s1) + n);	
 	if (p == NULL)
 	{
