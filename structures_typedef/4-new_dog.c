@@ -3,7 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -19,12 +23,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	ndog->name = malloc(sizeof(char) * (strlen(name) + 1));
-	if (ndog->name = NULL)
+	if (ndog->name == NULL)
 	{
 		return (NULL);
 	}
 	ndog->owner = malloc(sizeof(char) * (strlen(owner) + 1));
-	if (ndog->owner = NULL)
+	if (ndog->owner == NULL)
 	{
 		return (NULL);
 	}
