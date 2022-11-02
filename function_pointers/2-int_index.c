@@ -1,7 +1,11 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
- *
+ * int_index - searches for an integer
+ * @array: int
+ * @size: int
+ * @cmp: function pointer
+ * Return: index of the first element for which the cmp
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
