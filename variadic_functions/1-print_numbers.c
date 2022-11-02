@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- *
+ * print_numbers - prints numbers, followed by a new line
+ * @separator: pointer
+ * @n: int
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
